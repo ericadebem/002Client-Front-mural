@@ -42,10 +42,10 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <h1 className="app-title">React Mural</h1>
+      <h1 className="app-title">Angebot Mural</h1>
       <NoteList notes={notes} onDelete={deleteNote} onUpdate={updateNote} />
       <div className="note-input">
-        <h2>Add a Note</h2>
+        <h2>Was möchten Sie anbieten?</h2>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -58,13 +58,13 @@ const App: React.FC = () => {
             }
           }}
         >
-          <label>Title:</label>
+          <label>Titel:</label>
           <input type="text" name="title" className="input-field" required />
           <br />
-          <label>Message:</label>
+          <label>Angebot:</label>
           <textarea name="message" className="input-field" required></textarea>
           <br />
-          <button type="submit" className="submit-button">Add Note</button>
+          <button type="submit" className="submit-button">Speichern</button>
         </form>
       </div>
     </div>
